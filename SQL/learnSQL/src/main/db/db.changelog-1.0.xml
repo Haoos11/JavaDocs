@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet author="Silviu" id="Silviu-changelog-1.0">
+        <createTable tableName="ZTH1108Silviu">
+            <column name="PERS_ID" type="number(6)">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="FIRST_NAME" type="varchar(40)"/>
+            <column name="LAST_NAME" type="varchar(40)"/>
+            <column name="EMAIL" type="varchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PHONE_NUMBER" type="varchar(25)"/>
+            <column name="ADDRESS_ID" type="number(6)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+</databaseChangeLog>
